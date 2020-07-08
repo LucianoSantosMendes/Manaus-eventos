@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Manaus Eventos</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Manaus Eventos</h1>
+				
+			</div>
+		</header>
+		<main>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <section class="container">
+				<h2>Eventos disponíveis</h2>
+
+				<label for="filtrar-tabela">Localizar evento:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do evento">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome do evento</th>
+							<th>Data do evento</th>
+							<th>Local do evento</th>
+							<th>Valor do evento</th>
+						
+						</tr>
+					</thead>
+					<tbody id="tabela-eventos">
+						
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+
+		<section class="container">
+			<h2 id="titulo-form">Adicionar novo evento</h2>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="digite o nome do evento" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="data">Data:</label>
+					<input id="data" name="data" type="datetime-local" placeholder="digite a data do evento" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="local">Local:</label>
+					<input id="local" name="local" type="text" placeholder="digite o local do evento" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="valor">Valor:</label>
+					<input id="valor" name="valor" type="number" placeholder="digite o valor do evento" class="campo campo-medio">
+				</div>
+		
+				<button id="adicionar-evento" class="botao bto-principal">Adicionar evento</button>
+			</form>
+		</section>
+	
+	<script src="js/form.js"></script>
+	<script src="js/remover-evento.js"></script>
+	<script src="js/filtra.js"></script>
+	
+	</body>
+</html>
